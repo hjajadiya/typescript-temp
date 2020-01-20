@@ -1,0 +1,23 @@
+<p>firestore works!</p>
+  
+  <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()" *ngFor="let employee of employees">
+
+    <label>
+      ID:
+      <input type="text" formControlName="idinput">
+    </label>
+    <label>
+      First Name: 
+      <input type="text" formControlName="firstName">
+    </label>
+  
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <button (click)="create(employee)">Delete</button>    
+
+  </form>
+ 
+  

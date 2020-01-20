@@ -1,0 +1,38 @@
+<p>add-employee works!</p>
+<form [formGroup]="employeeForm" (ngSubmit)="onReview(employeeForm.value)">
+
+    <div>
+      <label for="firstname">
+        First Name
+      </label>
+      <input id="firstname" type="text" formControlName="firstname">
+    </div>
+    <div>
+        <label for="lastname">
+          Last Name
+        </label>
+        <input id="lastname" type="text" formControlName="lastname">
+      </div>
+      <div>
+        <label for="phone">
+          Phone
+        </label>
+        <input id="phone" type="number" formControlName="phone">
+      </div>
+      <div>
+        <label for="email">
+          email
+        </label>
+        <input id="email" type="email" formControlName="email">
+      </div>
+    <div>
+      <label for="address">
+        Address
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+  
+
+    <button class="button" type="submit">Review</button>
+    
+  </form>
